@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<div class="container">
+        <div class="col-md-6">
+            <ul>
+              <li><button (click)="onClickMe1()">Product 1</button></li>
+              <li><button (click)="onClickMe2()">Product 2</button></li>
+              <li><button (click)="onClickMe3()">Product 3</button></li>
+              <li><button (click)="onClickMe4()">Product 4</button></li>
+              
+            </ul>
+          </div>
+          
+          <!-- for simple view -->
+          
+          <!-- <div class="col-md-6">
+          <label>Product Name</label>
+          <h2>{{pname}}</h2>
+          <label>Product Color</label>
+          <h2>{{pcolor}}</h2>
+          <label>Product Cost</label>
+          <h2>{{pcost}}</h2>
+          </div> -->
+
+
+          <!-- for table View -->
+    
+          <!-- <div class="col-md-6">
+            <table border="1">
+              <tr>
+                <th>Product Name</th>
+                <th>Product Color</th>
+                <th>Product Cost</th>
+              </tr>
+              <tr>
+                <td>{{pname}}</td>
+                <td>{{pcolor}}</td>
+                <td>{{pcost}}</td>
+              </tr>
+            </table>
+          </div> -->
+          
+          <app-product-component [pname]="pname" [pcolor]="pcolor" [pcost]="pcost"></app-product-component>
+          
+    </div>
